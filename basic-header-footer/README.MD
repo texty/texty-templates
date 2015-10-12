@@ -1,4 +1,5 @@
 ## Простий шаблон із фіксованим хедером і футером
+http://texty.github.io/texty-templates/basic-header-footer/
 
 ### Підключені ліби
 * jquery
