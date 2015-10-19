@@ -30,6 +30,7 @@ a:hover {
 p {
     font-size: 1.4em;
     line-height: 1.8em;
+    padding-bottom: 1em;
 }
 
 
@@ -135,3 +136,26 @@ p {
 .support-site:visited {
     color: #f9a21b;
 }
+
+
+/* ======== Media Query ======== */
+
+@media only screen and (max-device-width: 768px)  and (orientation: portrait) {
+.wraper { margin-right: 5%; margin-left: 5%;}
+.copyright { font-size: 0.5em; }
+.links li { color:#fff; font-size: 0.5em; }
+.copying-info { padding-top: 10px; font-size: 0.5em;}
+.copying p {margin-bottom: 0px;}
+}
+
+@media only screen and (max-device-width: 480px) {
+.wraper { margin-right: 5%; margin-left: 5%;}
+.copyright { font-size: 0.5em; }
+.links li { color:#fff; font-size: 0.5em; }
+.copying-info { padding-top: 10px; font-size: 0.5em;}
+.copying p {margin-bottom: 0px;}
+.dj_header {display: none;}
+.links li {display:none;}
+.logo {margin-top: 15px;}
+}
+
