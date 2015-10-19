@@ -9,5 +9,4 @@ http://texty.github.io/texty-templates/basic-header-footer/
 * d3
 
 ### Існуючі проблеми:
-* При зменшення розміру хедера він ламається.
-* template-style.css дуже брудний, його треба почистити.
+https://github.com/texty/texty-templates/issues/1
