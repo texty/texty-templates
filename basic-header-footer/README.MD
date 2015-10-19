@@ -1,4 +1,6 @@
 ## Простий шаблон із фіксованим хедером і футером
+
+Подивитись (хoстинг цього ж коду на github.io)
 http://texty.github.io/texty-templates/basic-header-footer/
 
 ### Підключені ліби
