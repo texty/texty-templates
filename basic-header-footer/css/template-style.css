@@ -100,14 +100,10 @@ p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 200px;
-}
-
-#footer {
+    padding: 2rem;
     background: #1c2124 none repeat scroll 0 0;
     text-align: left;
     font-size: 15px;
-    padding: 0;
     display: block;
 }
 
@@ -125,10 +121,12 @@ p {
     font-size: 0.7em;
     color: #fff;
 }
-
+.copyright p {
+    font-size: 1.1em;
+}
 .copying-info {
-    padding-top: 31px;
     font-size: 0.7em;
+    padding-top: 10px;
     line-height: 15px;
     color: #888c91;
 }
@@ -140,31 +138,27 @@ p {
 
 /* ======== Media Query ======== */
 
-@media only screen and (max-width: 768px)  and (orientation: landscape) {
+@media only screen and (max-width: 1024px)  and (orientation: landscape) {
 .wraper { margin-right: 5%; margin-left: 5%;}
-.copyright { font-size: 0.5em; }
-.links li { color:#fff; font-size: 0.5em; }
-.copying-info { padding-top: 10px; font-size: 0.5em;}
-.copying p {margin-bottom: 0px;}
+.copyright { font-size: 0.6em; }
+.links li { color:#fff; font-size: 0.6em; }
+.copying-info { font-size: 0.6em;}
 .dj_header {font-size: 1.5em;}
 }
 
 
-@media only screen and (max-width: 768px)  and (orientation: portrait) {
+@media only screen and (max-width: 1024px)  and (orientation: portrait) {
 .wraper { margin-right: 5%; margin-left: 5%;}
-.copyright { font-size: 0.5em; }
-.links li { color:#fff; font-size: 0.5em; }
-.copying-info { padding-top: 10px; font-size: 0.5em;}
-.copying p {margin-bottom: 0px;}
+.copyright { font-size: 0.6em; }
+.links li { color:#fff; font-size: 0.6em; }
+.copying-info {font-size: 0.6em;}
 .dj_header {font-size: 1.5em;}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 601px) {
 .wraper { margin-right: 5%; margin-left: 5%;}
-.copyright { font-size: 0.5em; }
-.links li { color:#fff; font-size: 0.5em; }
-.copying-info { padding-top: 10px; font-size: 0.5em;}
-.copying p {margin-bottom: 0px;}
+.copyright { font-size: 0.7em; }
+.copying-info { font-size: 0.6em;}
 .dj_header {display: none;}
 .links li {display:none;}
 .logo {margin-top: 15px;}
