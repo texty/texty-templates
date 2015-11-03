@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="%%meta_description%%">
+    <meta name="author" content="%%author%%">
 
-    <title>Your custom name</title>
+    <title>%%page_title%%</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,25 +24,25 @@
     <!-- OpenGraph Meta Tags -->
     <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<%= page_title(title) %>" />
-    <meta property="og:image" content="<%= image_path("verge-50-cover.jpg") %>" />
-    <meta property="og:description" content="<%= meta_description(slug) %>" />
-    <meta property="og:url" content="<%= absolute_page_url(slug) %>" />
+    <meta property="og:title" content="%%page_title%%" />
+    <meta property="og:image" content="%%image_path%%" />
+    <meta property="og:description" content="%%meta_description%%" />
+    <meta property="og:url" content="%%absolute_page_url%%" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:site" content="@textyorgua" />
-    <meta property="twitter:account_id" content="<%= twitter_account_id %>" />
+    <meta property="twitter:account_id" content="49572937" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="<%= absolute_page_url(slug) %>" />
-    <meta name="twitter:title" content="<%= page_title(title) %>" />
-    <meta name="twitter:description" content="<%= meta_description(slug) %>" />
-    <meta name="twitter:image:src" content="<%= image_path("verge-50-cover.jpg") %>" />
+    <meta name="twitter:url" content="%%absolute_page_url%%" />
+    <meta name="twitter:title" content="%%page_title%%" />
+    <meta name="twitter:description" content="%%meta_description%%" />
+    <meta name="twitter:image:src" content="%%image_path%%" />
     <meta name="twitter:image:width" content="1200" />
     <meta name="twitter:image:height" content="630" />
 
     <!-- Other Meta Tags -->
-    <meta name="title" content="<%= page_title(title) %>">
-    <meta name="description" content="<%= meta_description(slug) %>">
+    <meta name="title" content="%%page_title%%">
+    <meta name="description" content="%%meta_description%%">
 
 </head>
 <body>
@@ -62,10 +62,8 @@
          </div>
          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
              <div class="social-icons">
-                <a href="https://twitter.com/home?status="
-                           target="_blank"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u="
-                           target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                <a href="https://twitter.com/home?status=%%tweet%%"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=%%facebook%%"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
              </div>
          </div>
     </div>
