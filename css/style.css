@@ -1,0 +1,19 @@
+
+
+#main-container {
+    width: 400px;
+
+}
+
+label {
+    font-weight: 400;
+    color: #4f4f4f;
+}
+
+input, textarea, select {
+    width: 100%;
+}
+
+input, select {
+    height: 2em;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="center-block">
+            <div class="col-xs-12 " id="main-container">
+
+                <h1>TEXTY templates v1.0</h1>
+                <p id="info"></p>
+
+
+                <p><label for="template-select">Шаблон</label><select id="template-select"> </select></p>
+                <br/>
+                <p><label>Заголовок</label><input placeholder="%%title%%"/></p>
+                <p><label>Опис</label><textarea placeholder="%%description%%"></textarea></p>
+                <p><label>Посилання</label><input placeholder="%%link%%" value="http://texty.org.ua/d/"/></p>
+                <p><label>Ключові слова</label><input placeholder="%%keywords%%"/></p>
+                <p><button type="button" class="btn btn-success"> Генерувати </button></p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<script src="libs/jquery-2.1.4.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/FileSaver.min.js"></script>
+<script src="libs/jszip.min.js"></script>
+<script src="libs/async.min.js"></script>
+<script src="js/github.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -21,11 +21,34 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<%= page_title(title) %>" />
+    <meta property="og:image" content="<%= image_path("verge-50-cover.jpg") %>" />
+    <meta property="og:description" content="<%= meta_description(slug) %>" />
+    <meta property="og:url" content="<%= absolute_page_url(slug) %>" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua" />
+    <meta property="twitter:account_id" content="<%= twitter_account_id %>" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<%= absolute_page_url(slug) %>" />
+    <meta name="twitter:title" content="<%= page_title(title) %>" />
+    <meta name="twitter:description" content="<%= meta_description(slug) %>" />
+    <meta name="twitter:image:src" content="<%= image_path("verge-50-cover.jpg") %>" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+
+    <!-- Other Meta Tags -->
+    <meta name="title" content="<%= page_title(title) %>">
+    <meta name="description" content="<%= meta_description(slug) %>">
+
 </head>
 <body>
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-fixed-top">
+<header class="navbar navbar-fixed-top">
   <div class="row wraper">
          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
             <div class="logo">
@@ -45,10 +68,8 @@
                            target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
              </div>
          </div>
-
     </div>
-
-</nav>
+</header>
 
 <!-- Your content here -->
 <div class="container">
@@ -131,6 +152,17 @@
 
 </script>
 
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18136548-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
 
 </body>
 
