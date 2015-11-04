@@ -8,7 +8,6 @@
             .getUri(templates_dir);
 
     github.dir(templates_dir_uri, function(dir) {
-        // if ok
         var folders = dir.filter(function(d) {
             return d.type === "dir";
         });
@@ -28,11 +27,6 @@
             });
         });
         console.log(folders);
-
-    }, function(err) {
-        // if err
-        console.log(err);
-        error(err.responseJSON.message);
     });
 
     function preprocessor(file) {
@@ -68,14 +62,6 @@
         });
 
         return modified;
-    }
-
-    function error(msg) {
-        var div = '<div class="alert alert-danger fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>'
-            + '<strong>Помилка! </strong>'
-            + msg
-            + '</div>';
-        $("#error-box").append(div);
     }
 
 })();
