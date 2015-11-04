@@ -22,8 +22,8 @@ var engine = (function () {
             }, function () {
                 info("Generating download...");
                 var content = zip.generate({type: "blob"});
-
                 cb(content);
+                info("Done");
             });
     };
 

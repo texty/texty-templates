@@ -50,8 +50,10 @@ var github = (function($) {
         return file.url.replace(module.getUri(root), "").split("?")[0];
     };
 
-    module.dir = function(url, callback) {
-        $.getJSON(url, callback);
+    module.dir = function(url, callback, err_cb) {
+        $.getJSON(url)
+            .success(callback)
+            .error(err_cb);
     };
 
     return module;
