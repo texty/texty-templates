@@ -22,9 +22,8 @@ var github = (function($) {
     };
 
     module.file = function(file, fileCb, cb) {
-        console.log("Getting file " + module.getRelativeUri(file));
         $.getJSON(file.url, function(file) {
-            fileCb(file, module.getRelativeUri(file));
+            fileCb(file);
             return cb();
         });
     };
@@ -47,8 +46,8 @@ var github = (function($) {
         });
     }
 
-    module.getRelativeUri = function(file) {
-        return file.url.replace(module.getUri(""), "").split("?")[0];
+    module.getRelativeUri = function(root, file) {
+        return file.url.replace(module.getUri(root), "").split("?")[0];
     };
 
     module.dir = function(url, callback) {

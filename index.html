@@ -10,32 +10,66 @@
 </head>
 <body>
 <div class="container">
+    <div class="row text-center"><h1>TEXTY templates v1.0</h1></div>
+
     <div class="row">
-        <div class="center-block">
-            <div class="col-xs-12 " id="main-container">
-
-                <h1>TEXTY templates v1.0</h1>
-                <p id="info"></p>
-
-
-                <p><label for="template-select">Шаблон</label><select id="template-select"> </select></p>
-                <br/>
-                <p><label>Заголовок</label><input placeholder="%%title%%"/></p>
-                <p><label>Опис</label><textarea placeholder="%%description%%"></textarea></p>
-                <p><label>Посилання</label><input placeholder="%%link%%" value="http://texty.org.ua/d/"/></p>
-                <p><label>Ключові слова</label><input placeholder="%%keywords%%"/></p>
-                <p><button type="button" class="btn btn-success"> Генерувати </button></p>
-
-            </div>
-        </div>
+        <div class="col-xs-8"><p><label for="template-select">Шаблон</label><select id="template-select"> </select></p></div>
+        <div class="col-xs-4 descr"><br/>Шаблон із папки templates. Поки що він один</div>
     </div>
 
+    <div class="row">
+        <div class="col-xs-8"><p><label>Заголовок</label><input placeholder="%%page_title%%" variable-name="%%page_title%%"/></p></div>
+        <div class="col-xs-4 descr"><br/>Для сторінки у браузері, тегів соцмереж </div>
+    </div>
 
+    <div class="row">
+        <div class="col-xs-8"><p><label>Опис</label><textarea placeholder="%%meta_description%%" variable-name="%%meta_description%%"></textarea></p></div>
+        <div class="col-xs-4 descr"><br/>Для тегів соцмереж</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8"><p><label>Повне абсолютне посилання</label><input placeholder="%%absolute_page_url%%" default="http://texty.org.ua/d/" variable-name="%%absolute_page_url%%"/></p></div>
+        <div class="col-xs-4 descr"><br/>Остаточне повне посилання, наприклад http://texty.org.ua/d/agro2015/</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8"><p><label>Ключові слова</label><input placeholder="%%keywords%%" variable-name="%%keywords%%"/></p></div>
+        <div class="col-xs-4 descr"><br/>Ключові слова через кому (мета-теги)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8"><p><label>Шлях до зображення 1200 х 630</label><input placeholder="%%image_path%%" variable-name="%%image_path%%" default="http://texty.org.ua/d/logo.png"/></p></div>
+        <div class="col-xs-4 descr"><br/>Повний остаточний шлях до зображення, яке використовується для розшарювання у соцмережах. Оптимальний розмір 1200x630 px.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8"><p><label>Твіт</label><textarea placeholder="%%tweet%%" variable-name="%%tweet%%"></textarea></p></div>
+        <div class="col-xs-4 descr"><br/>Текст твіта при розшарюванні (має містити посилання)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-8"><p><label>Текст fb</label><textarea placeholder="%%facebook%%" variable-name="%%facebook%%"></textarea></p></div>
+        <div class="col-xs-4 descr"><br/>Текст посту у ФБ. Просто посилання, або текст + посилання</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6"><p><button type="button" class="btn btn-success" id="btn-generate"> Генерувати </button></p></div>
+        <div class="col-xs-6"><p id="info"></p></div>
+    </div>
 
 </div>
+
 <script src="libs/jquery-2.1.4.min.js"></script>
+<script>
+    var defaults = $("[variable-name]").filter(function(i,e){return $(e).attr("default")});
+
+    defaults.each(function(i, e) {e.value = $(e).attr("default")});
+
+</script>
+
 <script src="libs/bootstrap.min.js"></script>
 <script src="libs/FileSaver.min.js"></script>
+<script src="libs/base64.js"></script>
 <script src="libs/jszip.min.js"></script>
 <script src="libs/async.min.js"></script>
 <script src="js/github.js"></script>

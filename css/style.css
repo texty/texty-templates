@@ -1,10 +1,4 @@
 
-
-#main-container {
-    width: 400px;
-
-}
-
 label {
     font-weight: 400;
     color: #4f4f4f;
@@ -16,4 +10,9 @@ input, textarea, select {
 
 input, select {
     height: 2em;
+}
+
+.descr {
+    font-size: 0.8em;
+    color: #777;
 }
