@@ -32,7 +32,7 @@
     }, function(err) {
         // if err
         console.log(err);
-        error();
+        error(err.responseJSON.message);
     });
 
     function preprocessor(file) {
@@ -70,8 +70,11 @@
         return modified;
     }
 
-    function error() {
-        var div = '<div class="alert alert-danger fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>Помилка! </strong>Перевищено ліміт Github API</div>'
+    function error(msg) {
+        var div = '<div class="alert alert-danger fade in"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>'
+            + '<strong>Помилка! </strong>'
+            + msg
+            + '</div>';
         $("#error-box").append(div);
     }
 
