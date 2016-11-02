@@ -1,0 +1,149 @@
+// ==============
+// Global imports
+// ==============
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+
+
+path.arrow, #arrowhead {
+  fill: none;
+  stroke: #fff;
+}
+
+#arrow {
+  fill:#fff;
+}
+
+
+.img {
+  margin-top: 3em;
+  margin-bottom: 10em;
+  @media #{$brk-spnarrow} {
+    margin-top: 0.5em;
+    margin-bottom: 4em;
+  }
+}
+
+.img-sm {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+
+.first {
+  margin-top: 5em;
+}
+
+#main {
+  padding-left: 5%;
+  padding-right:5%;
+  background-color: #252029;
+  @media #{$brk-narrow} {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/main.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#subtitle {
+  @include text(1.9em, 1.5em, normal, $white);
+  @media #{$brk-narrow} {
+    font-size: 1.3em;
+  }
+}
+
+
+.btn {
+  display: block;
+  margin:auto;
+  margin-top: 2em;
+  margin-bottom: 30em;
+  color:rgb(247, 122, 82);
+  &:hover {
+    color: $white;
+  }
+}
+
+
+p {
+  color:$grey;
+  &.number {
+    padding-bottom: 0.5em;
+  }
+}
+
+.block {
+  margin-bottom: 13em;
+  @media #{$brk-spnarrow} {
+    margin-bottom: 5em;
+  }
+}
+
+.center {
+  text-align: center;
+}
+.big-number {
+  @include text(5.5em, 1em, bold, $grey);
+  margin-top: 1em;
+  @media #{$brk-narrow} {
+    @include text(4em, 1em, bold, $grey);
+  }
+}
+
+.top {
+  margin-top: 10em;
+}
+
+.top-small {
+  margin-top: 5em;
+}
+
+.no-display-xs {
+  @media #{$brk-spnarrow} {
+    display: none;
+  }
+}
+.no-display-lg {
+  display:none;
+  @media #{$brk-spnarrow} {
+    display: block;
+  }
+}
+.count {
+  height: auto;
+}
+.citation-mobile {
+  @media #{$brk-spnarrow} {
+    display: none;
+  }
+}
+
+.citation.first {
+  @media #{$brk-narrow} {
+    margin-top: 2em;
+  }
+}
+
+div.support {
+  margin-bottom: 1.2em;
+}
+
+.support p {
+  font-size: 1em;
+  line-height: 1.1;
+  padding-bottom: 0;
+}

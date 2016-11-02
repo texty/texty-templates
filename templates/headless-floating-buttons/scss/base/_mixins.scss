@@ -1,0 +1,39 @@
+/// headers mixins
+@mixin text($size, $l-height:null, $weight:null, $color:null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin highlited($padding, $color, $background) {
+    padding: $padding;
+    color:$color;
+    background: $background;
+}
+
+@mixin button-mixin($border-btn, $background-btn, $font-btn, $color-btn ) {
+    outline: none;
+    box-shadow: none;
+    border: $border-btn;
+    background: $background-btn;
+    font-size: $font-btn;
+    color: $color-btn;
+    padding: 0.5em 2em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    border-radius: 0px;
+}
+
+@mixin filter($background-filter, $font-filter, $color-filter) {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: $background-filter;
+    font-size: $font-filter;
+    color: $color-filter;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    border-radius: 30px;
+}

@@ -1,0 +1,33 @@
+/* ======== HEADER ======== */
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 15px 0px 0px 0px;
+    z-index: 1000;
+}
+
+.social-icons {
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.social-tw,
+.social-fb {
+  background-color:rgba(187, 189, 192, 0.9);
+  padding: 5px;
+  color: #5b5b5b;
+  float: right;
+  margin: 5px 10px 0px 0px;
+  cursor: pointer;
+  &:hover{
+    color: $orange;
+  }
+}
+
+.single-share {
+  color:#ccc;
+  position: relative;
+  margin-top: -2em;
+}
